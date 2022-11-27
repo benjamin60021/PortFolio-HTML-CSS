@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Benjamin</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9cf62a4a2b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header1">
+        <div class="container">
+            <nav>
+                <img src="images/BB.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="Présentation.html">Présentation</a></li>
+                    <li><a href="Compétences.html">Mes Compétences</a></li>
+                    <li><a href="Projets.html">Mes Projets</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()" id="icontel"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()" id="icontel"></i>
+            </nav>
+        </div>
+        <div id="presentation">
+            <div class="container">
+                <div class="row">
+                    <div class="presentation-col-1">
+                        <img src="images/profil.jpg" alt="profil">
+                    </div>
+                    <div class="presentation-col-2">
+                        <h1 class="sub-title"><i class="fas fa-user-tie"></i>&nbsp&nbspPrésentation</h1>
+                        <p>Je m’appelle Bourgaud Benjamin, je suis âgé de 23 ans. Je
+                            suis actuellement étudiant à Vincennes à DIGITAL SCHOOL OF PARIS, en
+                            Formation BAC +3 Développeur web et mobile. Depuis mes jeunes
+                            années, j’ai toujours été attiré par l’informatique et les
+                            nouvelles technologies. C’est tout naturellement que je me
+                            suis tourné vers ces études, en effectuant un BAC STI2D «
+                            sciences et technologies de l'industrie et du développement
+                            durable », et mes deux années d’études en BTS Services
+                            Informatiques aux Organisations spécialisées en Solutions
+                            Logicielles et Applications Métier.</p>
+
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('formations')">Mes Formations</p>
+                                <p class="tab-links" onclick="opentab('parcours')">Parcours Professionel</p>
+                                <p class="tab-links" onclick="opentab('informations')">Informations</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="formations">
+                                <ul>
+                                    <li><span>Septembre 2022 - Juillet 2024</span><br>Développeur Web et mobile
+                                        Digital School of Paris, Vincennes, 94 </li>
+                                    <li><span>Septembre 2019 - Juillet 2021</span><br>BTS SIO(services informatique aux organisations) Option
+                                        développement informatique en Alternance
+                                        Institut F2I, Vincennes, 94 </li>
+                                    <li><span>Septembre 2018 - Juillet 2019</span><br>DEUST SINE DEUST
+                                        Polytech Sorbonne, Paris, 75 - système d'information
+                                        numérique et électronique </li>
+                                    <li><span>Septembre 2017 - Juillet 2018</span><br>Bac STI2D Option SIN (système Informatique numérique)
+                                        Lycée Jean Jaures, Argenteuil </li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="parcours">
+                                <ul>
+                                    <li><span>Septembre 2022 - Juillet 2024</span><br>Developpeur - Square IT Services, Asnières-Sur-Seine - Contrat en alternance
+                                        Développer des flux Java Tibco business Work
+                                    </li>
+                                    <li><span>Septembre 2019 - Juillet 2021</span><br>Developpeur - CRT Service, Bagnolet - Contrat en alternance
+                                        Développer des applications web + corrections de bug C#
+                                        Javascript et Adelia Visual Studio
+                                    </li>
+                                    <li><span>Juillet 2018 - Juillet 2018</span><br>Assistant en Bureautique - Dubernard, Houilles - CDD
+                                        Effectue différentes tâches pour aider les assistantes
+                                        commerciales dans le domaine des extincteurs
+                                        (création de devis, archivage des factures, implanter des
+                                        nouveaux extincteurs, etc..).
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="informations">
+                                <ul>
+                                    <li><span><i class="fa-solid fa-envelope-open-text"></i>&nbsp&nbspbourgaud.b@outlook.com</span><br></li>
+                                    <li><span><i class="fa-sharp fa-solid fa-phone"></i>&nbsp&nbsp06 65 45 45 65</span><br></li>
+                                    <li><span><i class="fa-solid fa-cake-candles"></i>&nbsp&nbsp23 ans</span><br></li>
+                                    <li><span><i class="fa-solid fa-car"></i>&nbsp&nbspPermis B</span><br></li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© Copyright 2022Bourgaud.Benjamin</p>
+        </div>  
+    </div>       
+    <script>
+        
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }   
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+        sidemeu.style.right = "0";
+        }
+        function closemenu(){
+        sidemeu.style.right = "-200px";
+        }
+
+    </script>
+</body>
+</html>

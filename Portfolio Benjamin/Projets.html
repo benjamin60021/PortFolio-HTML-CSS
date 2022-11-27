@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Benjamin</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9cf62a4a2b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header1">
+        <div class="container">
+            <nav>
+                <img src="images/BB.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="Présentation.html">Présentation</a></li>
+                    <li><a href="Compétences.html">Mes Compétences</a></li>
+                    <li><a href="Projets.html">Mes Projets</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()" id="icontel"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()" id="icontel"></i>
+            </nav>
+            <div class="header-text">
+                <div id="projets">
+                    <div class="container">
+                        <h1 class="sub-title">Mes Projets</h1>
+                        <div class="projets-list">
+                            <div class="projets1">
+                                <img src="images/sport2.jpg" alt="">
+                                <div class="layer">
+                                    <h3>Projet SOS PARTNER</h3>
+                                    <p>Création d'un site web pour mettre en relation des sportifs débutant ou expert</p>
+                                    <a href=""><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                            <div class="projets1">
+                                <img src="images/Ferry.png" alt="">
+                                <div class="layer">
+                                    <h3>Projet Atlantik</h3>
+                                    <p>Création d'un site web pour permettre la réservation de ticket à bord d'un ferry</p>
+                                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                            <div class="projets1">
+                                <img src="images/info.png" alt="">
+                                <div class="layer">
+                                    <h3>Projet Gestion Matos</h3>
+                                    <p>Création d'un logiciel permettant la gestion du materiel informatique pour chaque salarié au sein d'une entreprise</p>
+                                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                            <div class="projets1">
+                                <img src="images/Parc.png" alt="">
+                                <div class="layer">
+                                    <h3>Projet GLPI</h3>
+                                    <p>Installation et deploiment du plugIn LDAP GLPI pour la gestion d'un parc informatique</p>
+                                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <h1 class="sub-title"><br>Mes Projets en Entreprise</h1>
+                        <div class="projets-list">
+                            <div class="projets1">
+                                <img src="images/CRT.png" alt="">
+                                <div class="layer">
+                                    <h3>ADELIA Visual Studio</h3>
+                                    <p>Création d'un logiciel permettant le scan et le traitement des tickets restaurants </p>
+                                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                            <div class="projets1">
+                                <img src="images/tibco.png" alt="">
+                                <div class="layer">
+                                    <h3>TIBCO Business Work</h3>
+                                    <p>Création d'un flux pour le groupe LACTALIS permettant l'envoi de donnée à partir d'une table de transcodification</p>
+                                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© Copyright 2022Bourgaud.Benjamin</p>
+        </div>  
+    </div> 
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+        sidemeu.style.right = "0";
+        }
+        function closemenu(){
+        sidemeu.style.right = "-200px";
+        }
+
+    </script>
+</body>
+</html>

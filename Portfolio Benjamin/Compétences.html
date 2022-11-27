@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Benjamin</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/104583988c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header1">
+        <div class="container">
+            <nav>
+                <img src="images/BB.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="Présentation.html">Présentation</a></li>
+                    <li><a href="Compétences.html">Mes Compétences</a></li>
+                    <li><a href="Projets.html">Mes Projets</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()" id="icontel"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()" id="icontel"></i>
+            </nav>
+            <div class="header-text">
+                <div id="services">
+                    <div class="container">
+                        <h1 class="sub-title"><i class="fas fa-thumbs-up" id="compet"></i>&nbsp&nbspMes Compétences</h1>
+                        <div class="services-liste">
+                            <div id="colonne1">
+                                <h2><i class="fa fa-superpowers fa-spin color-theme icon-xl"></i>&nbsp&nbspEn Web</h2>
+                                    <p>Très Bonne Maitrise dans la conception de site web :  
+                                        <br><br>- Langage de balisage HTML
+                                        <br><br>- Les Feuilles de style CSS (maitrise des frameworks bulma et bootstrap)
+                                        <br><br>- Le Javascript (Maitrise de la bibliothèque Jquery)
+                                        <br><br>- Le langage de script coté serveur PHP<br><br>
+                                    </p>
+                               
+                            </div>
+                            <div id="colonne2">
+                                <h2><i class="fa fa-wrench fa-spin color-theme icon-xl"></i>&nbsp&nbspEn Programmation</h2>
+                                <p>Très Bonne connaissance en Programmation :  
+                                    <br><br>- Le Langage Adélia (création d'application windows)
+                                    <br><br>- Orienté objet le C# ainsi que le JAVA (création de logiciel)
+                                    <br><br>- Tibco Business Work, Développement de flux(plugIn SoftMonitor)
+                                </p>
+                            </div>
+                            <div id="colonne3">
+                                <h2><i class="fas fa-cog fa-spin"></i>&nbsp&nbspEn Base de Données</h2>
+                                    <p></p>Bonne Maitrise de la conception ou la maintenance de base de donnée : 
+                                        <br><br> - Très bonne connaissance du logiciel MySQL
+                                        <br><br> - Ainsi que du logiciel SQUIRREL<br><br>
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+        <div class="copyright">
+            <p>© Copyright 2022Bourgaud.Benjamin</p>
+        </div>  
+    </div> 
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+        sidemeu.style.right = "0";
+        }
+        function closemenu(){
+        sidemeu.style.right = "-200px";
+        }
+
+    </script>
+</body>
+</html>

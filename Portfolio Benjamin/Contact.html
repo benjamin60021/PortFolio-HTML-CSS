@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Benjamin</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9cf62a4a2b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header1">
+        <div class="container">
+            <nav>
+                <img src="images/BB.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="Présentation.html">Présentation</a></li>
+                    <li><a href="Compétences.html">Mes Compétences</a></li>
+                    <li><a href="Projets.html">Mes Projets</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()" id="icontel"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()" id="icontel"></i>
+            </nav>
+        </div>
+            <div id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="contact-left">
+                        <h1 class="sub-title">Contactez moi</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>bourgaud.b@outlook.com</p>
+                        <p><i class="fa-solid fa-phone"></i>06 38 49 35 22</p>
+                            <div class="social-icons">
+                                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                                <a href=""><i class="fa-brands fa-github"></i></a>
+                                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                            <a href="src/Benjamin_Bourgaud_CV.pdf" download class="btn btn2" id="sub1">Télécharger CV</a>
+                        </div>
+                        <div class="contact-right">
+                            <form>
+                                <input type="text" name="Name" placeholder="Votre Nom" required>
+                                <input type="text" name="email" placeholder="Votre Email" required>
+                                <textarea name="Message" rows="6" placeholder="Votre Message"></textarea>
+                                <button type="submit" class="btn btn2" id="sub">Envoyer</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="copyright">
+                <p>© Copyright 2022Bourgaud.Benjamin</p>
+            </div>     
+    </div> 
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+        sidemeu.style.right = "0";
+        }
+        function closemenu(){
+        sidemeu.style.right = "-200px";
+        }
+
+    </script>
+</body>
+</html>
